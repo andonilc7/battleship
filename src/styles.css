@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #F4F3F2
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 500
+}
+
+.turn-msg {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 15px;
+}
+
+.both-boards-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (width >=1100px) {
+  .both-boards-cont {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .board-container {
+    margin-right: 4vw;
+    margin-left: 4vw;
+  }
+}
+
+.board-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  grid-template-rows: repeat(10, 40px);
+  justify-content: center;
+  border: 1px solid black;
+  width: fit-content;
+}
+
+.board-item {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Opponent-board .board-item:hover {
+  cursor: pointer;
+}
+
+.player-name {
+  font-weight: 300;
+  padding-bottom: 5px;
+}
+
+.hover {
+  background: pink;
+}
+
+.game-btn-cont {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.game-btn {
+  padding:10px;
+  border: 1px solid black;
+  border-radius: 10%;
+}
+
+.game-btn:hover {
+  cursor: pointer;
+}
+
+.placed-ship {
+  background: navy
+}
