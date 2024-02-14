@@ -1,0 +1,1 @@
+Battleship game created with GUI. Practiced testing with Jest in this project as well.
